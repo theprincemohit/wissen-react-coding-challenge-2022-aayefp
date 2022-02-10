@@ -20,7 +20,6 @@ export default function Users({ token, logout }) {
 
   useEffect(() => {
     async function getUsers(token) {
-      console.log('abcd', token);
       return fetch('https://reqres.in/api/unknown', {
         method: 'GET',
         headers: {
